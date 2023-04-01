@@ -14,17 +14,17 @@ export default function Index({ data: { allPosts, site, blog } }) {
     <Container>
       <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
       <Intro />
-      {heroPost && (
+      {/* {heroPost && (
         <HeroPost
           title={heroPost.title}
-          coverImage={heroPost.coverImage}
+          coverImage={heroPost.cover}
           date={heroPost.date}
           author={heroPost.author}
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
         />
-      )}
-      {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+      )} */}
+      {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
     </Container>
   );
 }
